@@ -1,0 +1,29 @@
+[env]
+TER = "xterm-256color"
+COLORTERM = "truecolor"
+
+[general]
+working_directory = "/home/wayne"
+import = [
+    "theme/catppuccin-mocha.toml",
+]
+
+[window]
+dimensions = { columns = 100, lines = 30 }
+opacity=0.8
+blur=true
+decorations_theme_variant = "Dark"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+size = 18
+
+[keyboard]
+bindings = [
+    {key = "N", mods = "Control | Shift", action = "CreateNewWindow"},
+    {key = "F11",  action = "ToggleFullscreen"},
+    {key = "V", mods = "Control | Shift | Alt", action = "ToggleViMode"},
+]
+
